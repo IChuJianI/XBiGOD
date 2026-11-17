@@ -2,7 +2,7 @@
 
 专为 Xbox 提供游戏镜像转换。在 HarmonyOS 平板与电脑上，把 Xbox 360 游戏镜像在 ISO 与 GOD 格式之间互相转换。
 
-![XBiGOD 应用图标](store/icon/xbigod_icon_216.png)
+![XBiGOD 应用图标](store/icon/xbigod_icon_216.png) <a href="https://appgallery.huawei.com/app/detail?id=com.52wfun.xbigod&amp;channelId=SHARE&amp;source=appshare"><img src="store/icon/appgallery_icon_128.png" width="64" alt="华为应用市场下载 XBiGOD" title="华为应用市场下载 XBiGOD"></a>
 
 ## 功能
 
