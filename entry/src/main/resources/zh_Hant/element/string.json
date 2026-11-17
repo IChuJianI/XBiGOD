@@ -75,6 +75,8 @@
     { "name": "licenses_expand", "value": "檢視" },
     { "name": "licenses_collapse", "value": "收合" },
     { "name": "licenses_projects", "value": "專案名稱與位址" },
+    { "name": "licenses_project_self", "value": "本專案" },
+    { "name": "licenses_project_upstream", "value": "上游專案" },
     { "name": "licenses_components_versions", "value": "元件與版本" },
     { "name": "licenses_copyright_notices", "value": "著作權聲明" },
     { "name": "licenses_full_text", "value": "完整授權條文" },

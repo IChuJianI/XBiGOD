@@ -75,6 +75,8 @@
     { "name": "licenses_expand", "value": "查看" },
     { "name": "licenses_collapse", "value": "收起" },
     { "name": "licenses_projects", "value": "项目名称与地址" },
+    { "name": "licenses_project_self", "value": "本项目" },
+    { "name": "licenses_project_upstream", "value": "上游项目" },
     { "name": "licenses_components_versions", "value": "组件与版本" },
     { "name": "licenses_copyright_notices", "value": "版权声明" },
     { "name": "licenses_full_text", "value": "许可全文" },

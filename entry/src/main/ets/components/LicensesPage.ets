@@ -24,6 +24,7 @@ export struct LicensesPage {
     Scroll() {
       Column() {
         Column({ space: 8 }) {
+          this.projectsCard()
           this.mitCard()
           this.unicodeCard()
           this.god2isoCard()
@@ -45,6 +46,23 @@ export struct LicensesPage {
     .align(Alignment.Top)
     .scrollBar(BarState.Auto)
     .edgeEffect(EdgeEffect.Spring)
+  }
+
+  @Builder
+  projectsCard() {
+    Column({ space: 10 }) {
+      Text($r('app.string.licenses_projects'))
+        .fontSize(15)
+        .fontWeight(FontWeight.Medium)
+        .fontColor($r('app.color.text_primary'))
+        .width('100%')
+      this.textBlock($r('app.string.licenses_project_self'), XBIGOD_PROJECT)
+      this.textBlock($r('app.string.licenses_project_upstream'), ISO2GOD_PROJECT + '\n\n' + GOD2ISO_CREDIT)
+    }
+    .width('100%')
+    .padding({ left: 16, right: 16, top: 14, bottom: 16 })
+    .backgroundColor($r('app.color.surface'))
+    .borderRadius(15)
   }
 
   @Builder
@@ -96,7 +114,6 @@ export struct LicensesPage {
         Divider()
           .color($r('app.color.divider'))
         Column({ space: 10 }) {
-          this.textBlock($r('app.string.licenses_projects'), XBIGOD_PROJECT + '\n\n' + ISO2GOD_PROJECT)
           this.textBlock($r('app.string.licenses_components_versions'), MIT_COMPONENTS.join(', '))
           this.textBlock($r('app.string.licenses_copyright_notices'), MIT_COPYRIGHTS.join('\n'))
           this.textBlock($r('app.string.licenses_full_text'), MIT_LICENSE_TEXT)
