@@ -70,7 +70,7 @@
     { "name": "task_unknown_title", "value": "不明な ISO" },
     { "name": "licenses_title", "value": "オープンソースライセンス" },
     { "name": "licenses_mit_summary", "value": "XBiGOD、iso2god-rs、Rust 標準ライブラリと依存クレート（66 件）" },
-    { "name": "licenses_mit_note", "value": "複数のライセンスが適用されるコンポーネントは MIT 条件で配布されます。" },
+    { "name": "licenses_mit_note", "value": "複数のライセンスが適用されるコンポーネントは MIT 条件で配布されます。Unicode データには Unicode License V3 も適用されます。" },
     { "name": "licenses_unicode_scope", "value": "unicode-ident 1.0.27 と Rust 標準ライブラリ内の Unicode テーブル" },
     { "name": "licenses_expand", "value": "表示" },
     { "name": "licenses_collapse", "value": "隠す" },

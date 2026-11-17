@@ -70,7 +70,7 @@
     { "name": "task_unknown_title", "value": "Unknown ISO" },
     { "name": "licenses_title", "value": "Open source licenses" },
     { "name": "licenses_mit_summary", "value": "XBiGOD, iso2god-rs, Rust std and dependencies (66 entries)" },
-    { "name": "licenses_mit_note", "value": "Components under multiple licenses are distributed under the MIT terms." },
+    { "name": "licenses_mit_note", "value": "Components under multiple licenses are distributed under the MIT terms. Unicode data is also covered by the Unicode License V3." },
     { "name": "licenses_unicode_scope", "value": "unicode-ident 1.0.27 and the Unicode tables in the Rust standard library" },
     { "name": "licenses_expand", "value": "View" },
     { "name": "licenses_collapse", "value": "Hide" },

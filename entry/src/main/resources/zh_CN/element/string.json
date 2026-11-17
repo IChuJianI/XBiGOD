@@ -70,7 +70,7 @@
     { "name": "task_unknown_title", "value": "未知 ISO" },
     { "name": "licenses_title", "value": "开源许可" },
     { "name": "licenses_mit_summary", "value": "XBiGOD、iso2god-rs、Rust 标准库及依赖，共 66 项" },
-    { "name": "licenses_mit_note", "value": "多许可组件按 MIT 条款分发。" },
+    { "name": "licenses_mit_note", "value": "多许可组件按 MIT 条款分发；Unicode 数据同时适用 Unicode License V3。" },
     { "name": "licenses_unicode_scope", "value": "unicode-ident 1.0.27 与 Rust 标准库中的 Unicode 数据表" },
     { "name": "licenses_expand", "value": "查看" },
     { "name": "licenses_collapse", "value": "收起" },

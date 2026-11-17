@@ -30,6 +30,7 @@ XBiGOD 以 MIT 许可证发布。应用内「关于 → 开源许可」提供完
 - 许可证：CC BY-SA 4.0（https://creativecommons.org/licenses/by-sa/4.0/）
 - 版权：Copyright (c) rab - richardaburton@gmail.com
 - 说明：XBiGOD 参考其行为，用 Rust 独立实现 GOD → ISO 转换；未分发 god2iso 的 C# 源代码。
+- 免责声明：参考材料按「现状」提供，不附带任何明示或默示担保；详见许可全文。
 
 ### iso2god-android
 

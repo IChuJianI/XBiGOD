@@ -9,7 +9,7 @@ export const ISO2GOD_NAME: string = 'iso2god-rs'
 export const ISO2GOD_COPYRIGHT: string = 'Copyright (c) 2023 Ilia Pozdnyakov'
 export const ISO2GOD_URL: string = 'https://github.com/iliazeus/iso2god-rs'
 export const GOD2ISO_NAME: string = 'god2iso'
-export const GOD2ISO_COPYRIGHT: string = 'Copyright (c) 2010-2021 richardaburton@gmail.com'
+export const GOD2ISO_COPYRIGHT: string = 'Copyright (c) rab - richardaburton@gmail.com'
 export const GOD2ISO_URL: string = 'https://github.com/raburton/god2iso'
 
 // Rust 1.95.0 / ohos-bridge release 构建中纳入的 iso2god、Rust 标准库及全部正常依赖。
@@ -194,4 +194,5 @@ export const GOD2ISO_LICENSE_TEXT: string =
     'https://creativecommons.org/licenses/by-sa/4.0/\n\n' +
     'XBiGOD independently reimplements the GOD → ISO conversion algorithm in Rust. ' +
     'The original C# source code is not distributed with this application. ' +
-    'The in-app conversion adds progress reporting, XSF header generation and block-wise cancellation handling.'
+    'The in-app conversion adds progress reporting, XSF header generation and block-wise cancellation handling.\n\n' +
+    'The reference material is provided as-is, without warranties of any kind; see the license text for the full disclaimer.'
