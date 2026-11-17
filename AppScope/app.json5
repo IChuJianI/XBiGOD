@@ -2,8 +2,8 @@
   "app": {
     "bundleName": "com.52wfun.xbigod",
     "vendor": "李晨",
-    "versionCode": 3100000,
-    "versionName": "3.1",
+    "versionCode": 3200000,
+    "versionName": "3.2",
     "icon": "$media:layered_image",
     "label": "$string:app_name"
   }
