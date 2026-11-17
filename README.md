@@ -58,4 +58,4 @@ XBiGOD 以 MIT 许可证开源，全文见 [LICENSE](LICENSE)。第三方组件�
 
 ## 作者
 
-李晨 · https://www.52wfun.com · 3093376617@qq.com
+李晨 · 3093376617@qq.com
