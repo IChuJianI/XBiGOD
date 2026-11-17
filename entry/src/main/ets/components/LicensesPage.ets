@@ -1,14 +1,22 @@
+import { pasteboard } from '@kit.BasicServicesKit'
 import {
+  GOD2ISO_COPYRIGHT,
   GOD2ISO_CREDIT,
   GOD2ISO_LICENSE_TEXT,
-  ISO2GOD_PROJECT,
+  GOD2ISO_NAME,
+  GOD2ISO_URL,
+  ISO2GOD_COPYRIGHT,
+  ISO2GOD_NAME,
+  ISO2GOD_URL,
   MIT_COMPONENTS,
   MIT_COPYRIGHTS,
   MIT_LICENSE_TEXT,
   RUST_STD_UNICODE_COPYRIGHT,
   UNICODE_COPYRIGHT,
   UNICODE_LICENSE_TEXT,
-  XBIGOD_PROJECT
+  XBIGOD_COPYRIGHT,
+  XBIGOD_NAME,
+  XBIGOD_URL
 } from '../model/LicenseData'
 
 @Component
@@ -56,13 +64,72 @@ export struct LicensesPage {
         .fontWeight(FontWeight.Medium)
         .fontColor($r('app.color.text_primary'))
         .width('100%')
-      this.textBlock($r('app.string.licenses_project_self'), XBIGOD_PROJECT)
-      this.textBlock($r('app.string.licenses_project_upstream'), ISO2GOD_PROJECT + '\n\n' + GOD2ISO_CREDIT)
+      Text($r('app.string.licenses_project_self'))
+        .fontSize(12)
+        .fontWeight(FontWeight.Medium)
+        .fontColor($r('app.color.text_primary'))
+        .width('100%')
+      this.projectInfo(XBIGOD_NAME, XBIGOD_COPYRIGHT, XBIGOD_URL)
+      Text($r('app.string.licenses_project_upstream'))
+        .fontSize(12)
+        .fontWeight(FontWeight.Medium)
+        .fontColor($r('app.color.text_primary'))
+        .width('100%')
+        .margin({ top: 4 })
+      this.projectInfo(ISO2GOD_NAME, ISO2GOD_COPYRIGHT, ISO2GOD_URL)
+      this.projectInfo(GOD2ISO_NAME, GOD2ISO_COPYRIGHT, GOD2ISO_URL)
     }
     .width('100%')
     .padding({ left: 16, right: 16, top: 14, bottom: 16 })
     .backgroundColor($r('app.color.surface'))
     .borderRadius(15)
+  }
+
+  @Builder
+  projectInfo(name: string, copyright: string, url: string) {
+    Column({ space: 2 }) {
+      Text(name)
+        .fontSize(14)
+        .fontWeight(FontWeight.Medium)
+        .fontColor($r('app.color.text_primary'))
+        .width('100%')
+      Text(copyright)
+        .fontSize(12)
+        .fontColor($r('app.color.text_secondary'))
+        .width('100%')
+      Button({ type: ButtonType.Normal, stateEffect: true }) {
+        Text(url)
+          .fontSize(12)
+          .fontColor($r('app.color.accent'))
+          .textAlign(TextAlign.Start)
+          .maxLines(1)
+          .textOverflow({ overflow: TextOverflow.Ellipsis })
+          .width('100%')
+      }
+      .width('100%')
+      .constraintSize({ minHeight: 40 })
+      .padding({ left: 0, right: 0 })
+      .backgroundColor(Color.Transparent)
+      .hoverEffect(HoverEffect.Highlight)
+      .onClick(() => {
+        this.copyUrl(url)
+      })
+    }
+    .width('100%')
+    .alignItems(HorizontalAlign.Start)
+  }
+
+  private async copyUrl(url: string): Promise<void> {
+    try {
+      const data = pasteboard.createData(pasteboard.MIMETYPE_TEXT_PLAIN, url)
+      await pasteboard.getSystemPasteboard().setData(data)
+      this.getUIContext().getPromptAction().showToast({
+        message: $r('app.string.licenses_link_copied'),
+        duration: 2000
+      })
+    } catch (_e) {
+      // ignore
+    }
   }
 
   @Builder

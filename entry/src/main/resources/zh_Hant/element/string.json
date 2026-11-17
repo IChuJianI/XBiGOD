@@ -77,6 +77,7 @@
     { "name": "licenses_projects", "value": "專案名稱與位址" },
     { "name": "licenses_project_self", "value": "本專案" },
     { "name": "licenses_project_upstream", "value": "上游專案" },
+    { "name": "licenses_link_copied", "value": "專案位址已複製" },
     { "name": "licenses_components_versions", "value": "元件與版本" },
     { "name": "licenses_copyright_notices", "value": "著作權聲明" },
     { "name": "licenses_full_text", "value": "完整授權條文" },

@@ -77,6 +77,7 @@
     { "name": "licenses_projects", "value": "プロジェクト名と URL" },
     { "name": "licenses_project_self", "value": "本プロジェクト" },
     { "name": "licenses_project_upstream", "value": "上流プロジェクト" },
+    { "name": "licenses_link_copied", "value": "URL をコピーしました" },
     { "name": "licenses_components_versions", "value": "コンポーネントとバージョン" },
     { "name": "licenses_copyright_notices", "value": "著作権表示" },
     { "name": "licenses_full_text", "value": "ライセンス全文" },

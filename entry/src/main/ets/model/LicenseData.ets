@@ -1,11 +1,16 @@
 export const UNICODE_COPYRIGHT: string = 'Copyright © 1991-2023 Unicode, Inc.'
 export const RUST_STD_UNICODE_COPYRIGHT: string = 'Copyright 1991-2024 Unicode, Inc.'
 
-// Project homes shown in the licenses page: this app and the conversion engine it bundles.
-export const XBIGOD_PROJECT: string =
-  'XBiGOD\nCopyright (c) 2026 李晨\nhttps://github.com/IChuJianI/XBiGOD'
-export const ISO2GOD_PROJECT: string =
-  'iso2god-rs\nCopyright (c) 2023 Ilia Pozdnyakov\nhttps://github.com/iliazeus/iso2god-rs'
+// Project homes shown in the licenses page: this app and the upstream projects it builds on.
+export const XBIGOD_NAME: string = 'XBiGOD'
+export const XBIGOD_COPYRIGHT: string = 'Copyright (c) 2026 李晨'
+export const XBIGOD_URL: string = 'https://github.com/IChuJianI/XBiGOD'
+export const ISO2GOD_NAME: string = 'iso2god-rs'
+export const ISO2GOD_COPYRIGHT: string = 'Copyright (c) 2023 Ilia Pozdnyakov'
+export const ISO2GOD_URL: string = 'https://github.com/iliazeus/iso2god-rs'
+export const GOD2ISO_NAME: string = 'god2iso'
+export const GOD2ISO_COPYRIGHT: string = 'Copyright (c) 2010-2021 richardaburton@gmail.com'
+export const GOD2ISO_URL: string = 'https://github.com/raburton/god2iso'
 
 // Rust 1.95.0 / ohos-bridge release 构建中纳入的 iso2god、Rust 标准库及全部正常依赖。
 export const MIT_COMPONENTS: string[] = [
@@ -183,7 +188,7 @@ authorization of the copyright holder.`
 // god2iso (https://github.com/raburton/god2iso) is the reference for the GOD → ISO algorithm.
 // Its C# source is not distributed with XBiGOD; attribution follows CC BY-SA 4.0.
 export const GOD2ISO_CREDIT: string =
-  'god2iso\nCopyright (c) 2010-2021 richardaburton@gmail.com\nhttps://github.com/raburton/god2iso'
+  GOD2ISO_NAME + '\n' + GOD2ISO_COPYRIGHT + '\n' + GOD2ISO_URL
 export const GOD2ISO_LICENSE_TEXT: string =
   'Licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).\n' +
     'https://creativecommons.org/licenses/by-sa/4.0/\n\n' +
