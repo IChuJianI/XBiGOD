@@ -49,7 +49,7 @@
 
 ## 开源许可
 
-XBiGOD 以 MIT 许可证开源，全文见 [LICENSE](LICENSE)。第三方组件与算法参考见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，应用内「关于 → 开源许可」提供同样的完整清单。
+XBiGOD 以 MIT 许可证开源，全文见 [LICENSE](LICENSE)。第三方组件、算法参考与品牌素材声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，应用内「关于 → 开源许可」提供同样的完整清单。
 
 | 项目 | 角色 | 许可证 | 地址 |
 | --- | --- | --- | --- |

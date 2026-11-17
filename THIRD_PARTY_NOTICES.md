@@ -39,6 +39,14 @@ XBiGOD 以 MIT 许可证发布。应用内「关于 → 开源许可」提供完
 - 版权：Copyright (c) 2026 tkw6688
 - 说明：仅作行为参考，不随应用分发。
 
+## 品牌素材
+
+### 华为应用市场图标
+
+- 来源：华为应用市场官方图标，存放于 `store/icon/appgallery_icon_400.png`
+- 归属：图标版权及相关商标归华为技术有限公司所有
+- 说明：仅用于在 README 中标识并链接 XBiGOD 的华为应用市场详情页，不随应用分发。
+
 ## Unicode License V3
 
 COPYRIGHT AND PERMISSION NOTICE
