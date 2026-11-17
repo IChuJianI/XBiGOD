@@ -1,8 +1,8 @@
 # XBiGOD
 
-专为 Xbox 提供游戏镜像转换。在 HarmonyOS 手机、平板与电脑上，把 Xbox 360 游戏镜像在 ISO 与 GOD 格式之间互相转换。
+专为 Xbox 提供游戏镜像转换。在 HarmonyOS 平板与电脑上，把 Xbox 360 游戏镜像在 ISO 与 GOD 格式之间互相转换。
 
-![XBiGOD 手机端](store/screenshots/promo/dark/phone_01_convert.png)
+![XBiGOD 应用图标](store/icon/xbigod_icon_216.png)
 
 ## 功能
 
@@ -10,7 +10,7 @@
 - **GOD → ISO**：选择文件夹后自动识别头文件与 `.data`，合并导出为 ISO
 - 输出统一写入「下载/XBiGOD/&lt;机型&gt;/&lt;GOD|ISO&gt;/」
 - 深色模式，简体中文 / 繁体中文 / English / 日本語
-- 手机、平板、2in1 自适应布局：手机会话式底栏，平板两栏，电脑侧边栏
+- 平板、2in1 自适应布局：平板两栏，电脑侧边栏
 
 | 平板 | 电脑 |
 | --- | --- |
