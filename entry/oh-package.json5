@@ -1,0 +1,11 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "XBiGOD - Xbox 360 ISO to GOD converter for HarmonyOS",
+  "main": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "libxbigod_napi": "file:./src/main/cpp/types/libxbigod_napi"
+  }
+}

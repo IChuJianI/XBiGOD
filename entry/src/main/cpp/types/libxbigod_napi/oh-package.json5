@@ -1,0 +1,6 @@
+{
+  "name": "libxbigod_napi",
+  "types": "./index.d.ts",
+  "version": "1.0.0",
+  "description": "XBiGOD native ISO2GOD conversion bridge"
+}
