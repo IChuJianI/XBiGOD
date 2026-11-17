@@ -24,6 +24,7 @@ export struct LicensesPage {
   @Prop pagePadding: number = 16
   @Prop contentMaxWidth: number = 840
   @Prop bottomInset: number = 16
+  @State showProjects: boolean = false
   @State showMit: boolean = false
   @State showUnicode: boolean = false
   @State showGod2iso: boolean = false
@@ -58,31 +59,77 @@ export struct LicensesPage {
 
   @Builder
   projectsCard() {
-    Column({ space: 10 }) {
-      Text($r('app.string.licenses_projects'))
-        .fontSize(15)
-        .fontWeight(FontWeight.Medium)
-        .fontColor($r('app.color.text_primary'))
+    Column() {
+      Button({ type: ButtonType.Normal, stateEffect: false }) {
+        Row({ space: 8 }) {
+          Column({ space: 2 }) {
+            Text($r('app.string.licenses_projects'))
+              .fontSize(15)
+              .fontWeight(FontWeight.Medium)
+              .fontColor($r('app.color.text_primary'))
+            Text(XBIGOD_NAME + ' · ' + ISO2GOD_NAME + ' · ' + GOD2ISO_NAME)
+              .fontSize(12)
+              .fontColor($r('app.color.text_secondary'))
+              .maxLines(1)
+              .textOverflow({ overflow: TextOverflow.Ellipsis })
+          }
+          .layoutWeight(1)
+          .alignItems(HorizontalAlign.Start)
+
+          Text(this.showProjects ? $r('app.string.licenses_collapse') : $r('app.string.licenses_expand'))
+            .fontSize(12)
+            .fontColor($r('app.color.text_secondary'))
+          SymbolGlyph($r('sys.symbol.chevron_down'))
+            .fontSize(16)
+            .fontColor([$r('app.color.text_secondary')])
+            .rotate({ angle: this.showProjects ? 180 : 0 })
+            .accessibilityLevel('no')
+        }
         .width('100%')
-      Text($r('app.string.licenses_project_self'))
-        .fontSize(12)
-        .fontWeight(FontWeight.Medium)
-        .fontColor($r('app.color.text_primary'))
+      }
+      .width('100%')
+      .constraintSize({ minHeight: 60 })
+      .padding({ left: 16, right: 16, top: 8, bottom: 8 })
+      .backgroundColor($r('app.color.surface'))
+      .borderRadius(0)
+      .hoverEffect(HoverEffect.Highlight)
+      .stateStyles({
+        pressed: {
+          .backgroundColor($r('app.color.surface_secondary'))
+        }
+      })
+      .onClick(() => {
+        this.showProjects = !this.showProjects
+      })
+
+      if (this.showProjects) {
+        Divider()
+          .color($r('app.color.divider'))
+        Column({ space: 10 }) {
+          Text($r('app.string.licenses_project_self'))
+            .fontSize(12)
+            .fontWeight(FontWeight.Medium)
+            .fontColor($r('app.color.text_primary'))
+            .width('100%')
+          this.projectInfo(XBIGOD_NAME, XBIGOD_COPYRIGHT, XBIGOD_URL)
+          Text($r('app.string.licenses_project_upstream'))
+            .fontSize(12)
+            .fontWeight(FontWeight.Medium)
+            .fontColor($r('app.color.text_primary'))
+            .width('100%')
+            .margin({ top: 4 })
+          this.projectInfo(ISO2GOD_NAME, ISO2GOD_COPYRIGHT, ISO2GOD_URL)
+          this.projectInfo(GOD2ISO_NAME, GOD2ISO_COPYRIGHT, GOD2ISO_URL)
+        }
         .width('100%')
-      this.projectInfo(XBIGOD_NAME, XBIGOD_COPYRIGHT, XBIGOD_URL)
-      Text($r('app.string.licenses_project_upstream'))
-        .fontSize(12)
-        .fontWeight(FontWeight.Medium)
-        .fontColor($r('app.color.text_primary'))
-        .width('100%')
-        .margin({ top: 4 })
-      this.projectInfo(ISO2GOD_NAME, ISO2GOD_COPYRIGHT, ISO2GOD_URL)
-      this.projectInfo(GOD2ISO_NAME, GOD2ISO_COPYRIGHT, GOD2ISO_URL)
+        .padding({ left: 16, right: 16, top: 12, bottom: 16 })
+        .alignItems(HorizontalAlign.Start)
+      }
     }
     .width('100%')
-    .padding({ left: 16, right: 16, top: 14, bottom: 16 })
     .backgroundColor($r('app.color.surface'))
     .borderRadius(15)
+    .clip(true)
   }
 
   @Builder
