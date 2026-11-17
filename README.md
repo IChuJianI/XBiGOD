@@ -4,7 +4,7 @@
 
 ![XBiGOD 应用图标](store/icon/xbigod_icon_216.png)
 
-<p align="right">XBiGOD 现已登陆华为应用商店 <a href="https://appgallery.huawei.com/app/detail?id=com.52wfun.xbigod&amp;channelId=SHARE&amp;source=appshare"><img src="store/icon/appgallery_icon_400.png" width="64" alt="华为应用市场下载 XBiGOD" title="华为应用市场下载 XBiGOD"></a></p>
+<p align="right">XBiGOD 现已登陆华为应用商店，点击图标进行下载 <a href="https://appgallery.huawei.com/app/detail?id=com.52wfun.xbigod&amp;channelId=SHARE&amp;source=appshare"><img src="store/icon/appgallery_icon_400.png" width="64" alt="华为应用市场下载 XBiGOD" title="华为应用市场下载 XBiGOD"></a></p>
 
 ## 功能
 
